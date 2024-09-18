@@ -182,7 +182,7 @@ footer{
 }
 
 /* Estilo geral para as seções*/
-.about, .mission, .team{
+.about, .mission, .team, .test{
     padding: 40px 20px;
     max-width: 900px;
     margin: 0 auto;
@@ -250,7 +250,7 @@ footer{
 }
 
 .mudas {
-    width: 50%;
+    width: 55%;
     height: 20%;
 }
 
@@ -272,8 +272,18 @@ footer{
 }
 
 .editar{
-    display: block;
+    display:block ;
     margin-left: auto;
     margin-right: auto;
-    width:40%; /* Ou qualquer largura desejada */
+    width:80%; /* Ou qualquer largura desejada */
+}
+
+.ema, .tels {
+    margin-top: -10px;
+    padding: 10px 130px;
+    display: flex;
+    margin-bottom: -5%;
+    left: 50%;
+    font-weight: bolder;
+    right: 50%;
 }
