@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2{
+    text-align: center; /*Centraliza o texto do título*/
+    margin-bottom: 20px;/*Adiciona um espaçamento inferir*/
+    font-size: 1.5em;/*Aumenta o tamanho da fonte do titulo*/
+    color: #333;/*define a cor do texto*/
+}
+
+/* Estilos para os rotulos(label)*/
+
+label{
+    display: block;/*Exibe o rotulo em bloco para que ocupe toda a largura*/
+    margin-bottom: 5px;/*Espaçamento inferior entre o rótulo e o campo de input*/
+    font-size: 0.9em;/*Define um tamanho de fonte um pouco menor para os rótulos*/
+    color: #333;/*Cor escura para ps rótulos*/
+}
+
+/*Estilos para os campos de input*/
+input[type="text"],input[type="email"],input[type="password"]{
+    width: 100%;/*Faz o input ocupar 100% da largura do contêiner*/
+    padding: 10px;/*Espaçamento interno nos campos de input*/
+    margin-bottom: 15px;/*Espaçamento inferior entre os campos*/
+    border: 1px #ccc;/*Borda cinza clara*/
+    border-radius: 5px;/*Arredonda os cantos dos campos de input*/
+    font-size: 1em;/*Define o tamanho da fonte dentro dos input*/
+    box-sizing: border-box;/*Garante que o padding não aumente a largura do input*/
+}
+
+/*Estilo para o botão de envio*/
+
+button{
+    width: 100%;/*Faz o botão ocupar 100% da largura do contêiner*/
+    padding: 10px;/*Espaçamento interno dentro do botão*/
+    background-color: #1a73e8;/*Cor de fundo azul*/
+    color: white;/*cor do texto branca*/
+    border: none;/*Remove bordas do botão*/
+    border-radius: 5px;/*Arredonda os cantos do botão*/
+    font-size: 1em;/*Define o tamanho da fonte do botão*/
+    cursor: pointer;/*Mostra o cursor de "mão" ao passar sobre o botão*/
+}
+
+/*Efeito ao passaro mause sobre o botão*/
+button:hover{
+    background-color: #0c5abf;/*Altera a cor de fundo ao passar o mause*/
+}
+
+/*Estilo para a mensagem de erro*/
+
+#error-message{
+    color: red;/*Cor vermelha para a mensagem de erro*/
+    font-size: 0.9em;/*Define o tamanho da fonte para a mensagem de erro*/
+    margin-top: 10px;/*Adiciona espaçamento acima da mensagem*/
+    text-align: center;/*Centraliza o texto da mensagem de erro*/
+}
