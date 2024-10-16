@@ -14,17 +14,17 @@ function consultarCep(){
     //Faz uma requisição à API para obter os dados do CEP
     fetch(url)
         .then(response => response.json())// Converte a resposta em JSON
-        .then(data =>{
+        .then(mar =>{
             //Verifica se o CEP foi encontrado
-            if(data.erro){
+            if(mar.erro){
                 alert("CEP não encontrado.");
                 return;//Interrompe a execução se o CEP não for válido
             }
             //Atualiza os campos no formulário com os dados retornados pela API
-            document.getElementById('Rua').textContent = data.logradouro;
-            document.getElementById('Bairro').textContent = data.bairro;
-            document.getElementById('Cidade').textContent = data.localidade;
-            document.getElementById('Estado').textContent = data.uf;
+            document.getElementById('Rua').textContent = mar.logradouro;
+            document.getElementById('Bairro').textContent = mar.bairro;
+            document.getElementById('Cidade').textContent = mar.localidade;
+            document.getElementById('Estado').textContent = mar.uf;
         })
         .catch(error =>{
             console.error("Erro ao consultar o CEP:",error);//Loga erros no console
