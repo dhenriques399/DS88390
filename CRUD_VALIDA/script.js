@@ -1,19 +1,16 @@
-document.querySelector('form').addEventListener('submit', function(event) { 
-  // Adiciona um evento de envio ao formulário
-  event.preventDefault(); // Previne o envio do formulário
-  
-  // Obtem os valores dos campos do formulário
-  var email = document.getElementById('email').value;
-  var senha = document.getElementById('senha').value;
-  var nome = document.getElementById('nome').value;
-  var telefone = document.getElementById('telefone').value;
+// Seleciona o formulário e adiciona um evento para quando o botão de enviar for clicado
+document.querySelector('form').addEventListener('submit', function(event) {
+    // Seleciona os campos do formulário
+    var nome = document.getElementById('nome').value;
+    var telefone = document.getElementById('telefone').value;
+    var email = document.getElementById('email').value;
+    var senha = document.getElementById('senha').value;
 
-  
-  // Verifica se o email e a senha correspondem aos dados armazenados
-  if (nome === '' || telefone === '' || email === '' || senha === '') {
-    alert('Por favor,preencha todos os campos!');// Exibe uma mensagem de alerta
-    event.preventDefault();// Previne o envio do formulário 
-  } else {
-    form.reset();// Limpa o formulário
-  }
+    // Verifica se todos os campos estão preenchidos
+    if (nome === '' || telefone === '' || email === '' || senha === '') {
+        alert('Por favor, preencha todos os campos.'); // Exibe um alerta se houver campos vazios
+        event.preventDefault(); // Evita o envio do formulário até que os campos sejam preenchidos
+    } else {
+        form.reset();
+    }
 });
