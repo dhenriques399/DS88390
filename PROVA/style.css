@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Cinza claro */
+  color: #333; /* Texto escuro */
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  background-color: #007BFF; /* Azul */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700; /* Cor dourada ao passar o mouse */
+}
+
+.contact {
+  background-color: white; /* Fundo branco para destacar */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+h2 {
+  color: #007BFF; /* Azul para o título */
+}
+
+p {
+  line-height: 1.6; /* Melhora a legibilidade do texto */
+}
